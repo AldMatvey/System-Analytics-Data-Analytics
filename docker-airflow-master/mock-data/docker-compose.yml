@@ -1,0 +1,5 @@
+services:
+  fake-data:
+    build: .
+    container_name: fake-data
+    restart: unless-stopped

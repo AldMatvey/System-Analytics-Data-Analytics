@@ -1,0 +1,3 @@
+fastapi==0.128.6
+uvicorn[standard]==0.32.*
+faker==33.*

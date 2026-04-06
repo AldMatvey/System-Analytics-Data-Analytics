@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet">
+    <title>Макет страницы</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>sheme_metro_for_analitic.org - загрузка станций метро</h1>
+        <div id="nav">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О сайте</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div id="sidebar1" class="legend">
+            <h2>Легенда схемы</h2>
+            <p>Здесь будут обозначения, принятые на схеме</p>
+            <button type="button">Переключение режимов отображения</button>
+        </div>
+        <div id="sidebar2" class="station">
+            <table>
+                <tbody>
+                    <tr>
+                        <td data-label="Названия станции">Чистые пруды</td>
+                        <td data-label="Название ветки (веток)">Сокольническая</td>
+                        <td data-label="Текущий коэффициент загруженности">3 человека в минуту</td>
+                        <td data-label="Средний коэффициент загруженности">5.5 человека в минуту</td>
+                        <td data-label="Выходы станции">
+                            <select id="out" name="выход">
+                                <option value="1" selected>Выход №1 к Чистопрудному бульвару, к памятнику А.С.
+                                    Грибоедову</option>
+                                <option value="2">Выход №2 к Мясницкой улице, к театру «Et Cetera»; к Сретенскому
+                                    бульвару, к Дворцу бракосочетания №1</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!-- Другие строки таблицы -->
+                </tbody>
+            </table>
+        </div>
+        <div id="sidebar3" class="map">
+            <button class="button_r button5" title="Чистые пруды"> <span></span></button>
+        </div>
+    </div>
+
+</body>
+
+</html>

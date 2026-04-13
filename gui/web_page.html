@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Метро — аналитика загруженности</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="header">
+    <h1>sheme_metro_for_analitic.org — загрузка станций метро</h1>
+    <div id="nav">
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О сайте</a></li>
+        </ul>
+    </div>
+</div>
+<div class="wrapper">
+    <div id="sidebar1" class="legend">
+        <h2>Легенда схемы</h2>
+        <p>Текущая загруженность — пасс./мин<br>
+        Средняя загруженность за сутки<br>
+        Выбор выхода влияет на анализ потока</p>
+        <button class="mode-btn" id="toggleModeBtn">Переключение режимов отображения</button>
+        <div id="infoMsg" class="status">Данные загружаются...</div>
+    </div>
+    <div id="sidebar2" class="station">
+        <h3>Станции метро (данные с сервера)</h3>
+        <table id="stationsTable">
+            <thead>
+                <tr>
+                    <th>Название станции</th>
+                    <th>Ветка(и)</th>
+                    <th id="coeffHeader">Текущий коэффициент (чел/мин)</th>
+                    <th>Выходы станции</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr><td colspan="4" style="text-align:center">Загрузка данных...</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="sidebar3" class="map">
+        <h3>Схема (фрагмент)</h3>
+        <button class="button_r button5" title="Чистые пруды (интерактив)"></button>
+        <p style="font-size:12px; margin-top:20px;">*Клик по кнопке — имитация выбора станции на карте</p>
+    </div>
+</div>
+<script src="web_page.js"></script>
+</body>
+</html>

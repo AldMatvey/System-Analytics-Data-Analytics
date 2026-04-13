@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    margin: 0;
+    background: #f0f2f5;
+}
+#header {
+    background: #1e2a3a;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+#header h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+#nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+#nav a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: 500;
+}
+#nav a:hover {
+    color: white;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.legend {
+    flex: 1.2;
+    min-width: 400px;
+    background: white;
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.station {
+    flex: 3;
+    min-width: 900px;
+    background: white;
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow-x: auto;
+}
+.map {
+    flex: 1.5;
+    min-width: 200px;
+    background: #e9ecef;
+    border-radius: 16px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+th, td {
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: middle;
+}
+th {
+    background-color: #f8fafc;
+    font-weight: 600;
+    color: #0f172a;
+}
+tr:hover {
+    background-color: #f9fafb;
+}
+select {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background: white;
+    font-size: 0.85rem;
+    max-width: 260px;
+}
+button {
+    background: #2c3e66;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+    margin-top: 12px;
+}
+button:hover {
+    background: #1e2a4a;
+    transform: scale(0.98);
+}
+.mode-btn {
+    background: #0f3b2c;
+    width: 100%;
+}
+.status {
+    font-size: 0.8rem;
+    color: #2d6a4f;
+    background: #e9f5ef;
+    padding: 6px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.button_r {
+    background: #b91c1c;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+@media (max-width: 800px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    td, th {
+        padding: 8px;
+    }
+}

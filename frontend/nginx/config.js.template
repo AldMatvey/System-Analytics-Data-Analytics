@@ -1,0 +1,4 @@
+window.APP_CONFIG = {
+  YANDEX_MAPS_API_KEY: "${YANDEX_MAPS_API_KEY}"
+};
+
